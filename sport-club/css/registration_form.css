@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffc107;
+}
+
+span{
+    float: left;
+}
+form{
+    margin: 20px auto;
+    padding: 20px 20px 0px 20px;
+    border: 2px dashed firebrick;
+    overflow: hidden;
+    width: 700px;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+    color: #ffc107;
+}
+fieldset{
+    margin-bottom: 50px;
+    border: 2px solid #000;
+    border-radius: .25rem;
+}
+
+legend{
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.row{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+input[type="text"]{
+    width: calc(50% - 3px);
+}
+
+
+input[type="date"]{
+    width: 50%;
+    float: right;
+}
+
+select{
+    width: calc(50% + 5px);
+    float: right;
+}
+
+.types-distance span{
+    
+}
+
+.distance{
+    overflow: hidden;
+    margin: 10px 0 10px 20px;
+    width: 100%;
+}
+.distance .check{
+    float: left;
+    margin-left: 20px;
+    width: 20%;
+}
+
+.fl{
+    float: left;
+    margin-left: 15px;
+    width: 150px;
+}
+.fr{
+    float: right;
+}
+
+.agreement{
+    padding-bottom: 0;
+}
+
+textarea {
+    margin: 0px; 
+    width: 663px; 
+    height: 113px;
+    resize: none;
+}
+
+.button-div{
+    text-align: center;
+}
+.button{
+    width: 200px;
+    margin: 20px 50px;
+    height: 50px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    
+}
+.button-send{
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.button-send:hover{
+    background-color: #289942;
+    border-color: #289942;
+}
+.button-clear{
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.button-clear:hover{
+    background-color: #a72734;
+    border-color: #a72734;
+}
+

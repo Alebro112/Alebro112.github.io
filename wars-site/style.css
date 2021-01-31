@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+body{
+    font-family: 'Comfortaa', cursive;  
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    -webkit-box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+}
+
+h2{
+    color: #444444;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC
+}
+strong{
+    font-size: 17px;
+}
+
+
+header{
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 0.1px;
+    background-color: rgba(0,0,0,.9);;
+    color: white;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 31px 9px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 1px 31px 9px rgba(0,0,0,0.32);
+    box-shadow: 0px 1px 31px 9px rgba(0,0,0,0.32);
+}
+.header-content{
+    width: 80%;
+    margin: 0% auto;
+}
+.header-title{
+    margin-left: 10%;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 0px #00e6e6;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0% auto;
+    padding: 2% 5%;
+    overflow: hidden;   
+}
+section{
+    float: left;
+    background-color: whitesmoke;
+    margin-top: 0;
+    padding: 10px 20px;
+    -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+}
+
+.title-img{
+    width: 80%;
+    margin: 0 12%;
+    overflow: hidden;
+}
+.title-img img{
+    width: 300px;
+    height: 300px;
+    margin: 2% 2%;
+    float: left;
+    border-radius: 50%;
+    border: 5px solid #fff
+}
+
+
+.row{
+    width: 98%;
+    margin: 3% 5% 1% 1%;
+    float: left;  
+}
+
+
+
+.causes-of-wars{
+    width: 60%;
+    height: 470px;
+    
+}
+
+.types-of-wars{
+    width: 20%;
+    height: 470px;
+    text-align: center;
+    line-height: 1.8;
+    float: right;
+}
+
+.types-description{
+    margin-bottom: 40px;
+}
+
+
+.interesting-wars{
+    padding: 0px 30px 10px 30px;
+    
+}
+
+.interesting-wars h2 {
+    text-align: center;
+}
+
+.interesting-wars article{
+    width: 48%; 
+    float: left;
+    margin: 0% 1%;
+    text-align: justify;
+}
+.interesting-wars img{
+    width: 300px;
+    padding: 10px;
+    box-shadow: none;
+}
+
+
+
+.butterfly-section{
+    width: 405px;
+    margin: 40px auto;
+}
+.butterfly-section img{
+    width: 200px;
+    height: 200px;
+    -webkit-box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 28px -19px rgba(0,0,0,0.75);
+}
+
+.p10{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.r10{
+    border-radius: 0 100%;
+}
+.r11{
+    border-radius: 100% 0;
+}
+.fl{
+    float: left;
+    border-radius: 0 50% 50% 50%;
+}
+.fr{
+    float: right;
+    border-radius: 50% 0% 50% 50%;
+}
+
+.mirrorY{
+    box-shadow: none;
+    
+}

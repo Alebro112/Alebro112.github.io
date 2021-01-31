@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/registration_form.css">
+</head>
+<body>
+    <main>
+        <form>
+           <h1>Регистрация на соревнование</h1>
+            <fieldset class="fieldset basic-information">
+                <legend>Основнная информация</legend>
+                <div class="row">
+                    <span>Выберите соревнование</span>
+                    <select name="competition" id="" class="fr">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+        
+                <div class="row">
+                    <span>Ф.И.О </span><input class="fr" type="text" name="" id="" placeholder="Введите Ф.И.О.">
+                </div>
+        
+                <div class="row">
+                    <span>Дата рождения</span><input class="fr" type="date" name="" id="">
+                </div>
+    
+                <div class="row">
+                    <span>Выберите пол</span>
+                    <select name="" id="" class="fr">
+                        <option value="sex">Мужской</option>
+                        <option value="sex">Женский</option>
+                    </select>
+                </div>
+        
+                <div class="row">
+                    <span>Выберите возрастнуню категорию </span>
+                    <select name="" id="" class="fr">
+                        <option value="">16-18</option>
+                        <option value="">18-21</option>
+                        <option value="">21-25</option>
+                        <option value="">25-30</option>
+                    </select>
+                </div>
+    
+            </fieldset>
+            
+            <fieldset class="fieldset">
+                <legend>Беговый виды и дистанции</legend>
+                <div class="row types-distance">
+                    <input type="checkbox" name="" id="" class="category"><span>Спринт</span><br>
+    
+                        <div class="distance">
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>100 м.</span>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>400 м.</span>
+                            </div>
+                        </div>
+    
+                    <input type="checkbox" name="" id="" class="category"><span>Средние дистанции</span><br>
+    
+                        <div class="distance">
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>600 м.</span>
+                            </div>
+    
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>1000 м.</span>
+                            </div>
+    
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>2000 м.</span>
+                            </div>
+    
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>3000 м.</span>
+                            </div>
+                        </div>
+    
+                    <input type="checkbox" name="" id="" class="category"><span>Длинные дистанции</span><br>
+    
+                        <div class="distance">
+    
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>5000 м.</span>
+                            </div> 
+    
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>30000 м.</span>
+                            </div>
+                        </div>
+                    <input type="checkbox" name="" id="" class="category"><span>Бег с барьерами</span><br>
+    
+                        <div class="distance">
+                            
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>100 м.</span>
+                            </div>
+    
+                            
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>110 м.</span>
+                            </div>
+    
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>400 м.</span>
+                            </div>
+                        </div>
+                    <input type="checkbox" name="" id="" class="category"><span>Эстафетный бег</span><br>
+    
+                        <div class="distance">
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>4x 100 м.</span>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>4x 400 м.</span>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>4x 800 м.</span>
+                            </div>
+                            <div class="check">
+                                <input type="checkbox" name="" id="">
+                                <span>4x 1500 м.</span>
+                            </div>
+                        </div>  
+                </div>
+            </fieldset>
+
+           <fieldset class="fieldset sport">
+               <legend>Спорт</legend>
+                <div class="row">
+                    <span>Разряд</span>
+                    <select name="" id="" class="fr">
+                        <option value="1">КМС</option>
+                        <option value="2">I</option>
+                        <option value="3">II</option>
+                        <option value="4">III</option>
+                        <option value="5">I(ю)</option>
+                        <option value="6">II(ю)</option>
+                        <option value="7">III(ю)</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <span class="w40">Команда</span>
+                    <input type="text" name="" id="" class="fr" placeholder="Название команлы">
+                </div>
+
+                <div class="row">
+                    <span class="w40">Тренер</span>
+                    <input type="text" name="" id="" class="fr" placeholder="Ф.И.О тренера">
+                </div>
+
+                <div class="row">
+                    <span class="w40">Спортивный опыт</span>
+                    <input type="text" name="" id="" class="fr" placeholder="лет"> 
+                </div>
+
+                <div class="row">
+                    <span>Достижения</span><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+           </fieldset>
+
+           <fieldset class="fieldset">
+               <legend>Соглашение</legend>
+               <div class="row">
+                   <span>Контактные данные</span>
+                   <input type="text" name="" id="" placeholder="+372 5300000" class="fr">
+                   <input type="text" name="" id="" placeholder="e-mail адресс" class="fr">
+               </div>
+
+               <div class="row">
+                   <span>Дата регистрация</span>
+                   <input type="date" name="" id="" class="fr">
+               </div>
+
+                <div class="row">
+                    <span>Запрос на согласие обработки персональных данных</span>
+                    <input type="checkbox" name="" id="">
+                </div>
+
+               <div class="row button-div">
+                   <button class="button button-send">Отправить</button>
+                   <button class="button button-clear">Очистить</button>
+               </div>
+
+           </fieldset>
+        </form>
+    </main>
+</body>
+</html>
+
