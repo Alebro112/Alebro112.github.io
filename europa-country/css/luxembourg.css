@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+body{
+	padding: 0;
+	margin: 40px 0 0px 0;
+	background-color: #F1FAEE;
+	font-family: 'Comfortaa', cursive;
+}
+img{
+	width: 100%;
+}
+
+h1{
+	margin: 15px;
+	text-align: center;
+	color: #FF5E5B;
+	text-decoration: underline;
+}
+h2{
+	margin: 15px 0px;
+	text-align: center;
+	color: #FF5E5B;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: #848484;
+}
+
+
+.content{
+	margin: 0 100px 50px 100px;
+	padding: 35px 50px;
+	background-color: #fff;
+	box-shadow: 0px 0px 42px -5px #E63946;
+}
+/* География и История */
+.geogr table .text{
+	font-size: 26px;
+	width: 60%;
+	vertical-align: top;
+}
+.geogr table .img_map{
+	width: 40%;
+}
+.geogr p{
+	padding-left: 16px;
+	line-height: 1.7;
+}
+.geogr h2{
+	text-align: left;
+	text-decoration: underline;
+}
+
+}
+
+.back{
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+/* Достопремичательности */
+.attractions_table{
+	width:100%;
+}
+
+.attractions_table td{
+	width: 25%; 
+	text-align: center;
+}
+.attractions_table p{
+	padding: 0 10px;
+}
+
+
+/* Интересные факты */
+
+.interesting_facts_list{
+	line-height: 3;
+	text-align: justify;
+}
+
