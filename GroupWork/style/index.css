@@ -17,7 +17,7 @@ html, body{
 .wrapper{
     background-color: white;
     margin: 0 auto;
-    width: 75%;
+    width: 1440px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
@@ -31,16 +31,13 @@ header{
     background-position: left;
 }
 
-.logo{
-}
 
 nav{
-
     min-height: 72px;
     background-color: #FFF1DB;
-    opacity: 60%;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .link{
@@ -53,6 +50,10 @@ nav{
     color: #000000;
 
     mix-blend-mode: normal;
+}
+
+.logo{
+    height: 60px;
 }
 
 main{
@@ -315,9 +316,10 @@ footer .contact span{
 
 footer .lic{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 
-    padding: 5px 0;
+    padding: 5px 15%;
 }
 
 
@@ -433,5 +435,57 @@ h2{
 
     footer .contact span{
         font-size: 18px;
+    }
+}
+
+@media(max-width:750px){
+    header .logoM{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    nav{
+        min-height: 144px;
+        background-color: #FFF1DB;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav .link{
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+    
+        color: #000000;
+    
+        mix-blend-mode: normal;
+    }
+
+    
+    footer .contact {
+        flex-direction: column;
+        padding-left: 15%;   
+    }
+
+    footer .contact span{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 590px){
+    .staff-block {
+        flex-direction: column;
+    }
+
+    .quality-block-right .content, .quality-block-left .content {
+        margin: 0;
+        padding: 0 40px 50px 40px;
     }
 }

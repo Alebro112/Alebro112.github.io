@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+body{
+	padding: 0;
+	margin: 40px 0 0px 0;
+	font-family: 'Caveat', cursive;
+	background: rgb(100,103,145);
+	background: linear-gradient(90deg, rgba(100,103,145,1) 0%, rgba(89,148,157,1) 49%, rgba(100,103,145,1) 100%);
+}
+img{
+	width: 100%;
+}
+p, li{
+	font-size: 25px;
+	color: white;
+}
+
+h1{
+	font-size: 66px;
+	color: blue;
+	text-align: center;
+	border: dashed 2px lightblue;
+}
+h2{
+	font-size: 52px;
+	color: magenta;
+}
+
+/* Back button */
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+	color: #848484;
+}
+.back{
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+/* Content */
+.content{
+	margin: 0 5%;
+}
+
+
+.attractions_table{
+	width:100%;
+}
+
+.attractions_table td{
+	width: 25%; 
+	text-align: center;
+}
+.attractions_table p{
+	padding: 0 10px;
+}
+
+
+.interesting_facts_list{
+	line-height: 3;
+	text-align: justify;
+}

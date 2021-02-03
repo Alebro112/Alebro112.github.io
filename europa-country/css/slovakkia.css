@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Old+Standard+TT&display=swap');
+
+body{
+	padding: 0;
+	margin: 40px 0 40px 0; 
+	background: rgb(255,0,211);
+	background: radial-gradient(circle, rgba(255,0,211,1) 0%, rgba(255,0,151,1) 49%, rgba(255,0,211,1) 100%);
+	font-family: 'Old Standard TT', serif;
+}
+img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	text-decoration: none;
+	color: #848484;
+}
+
+.back{
+	margin: 0;
+	text-align: right;
+}
+
+h1{
+	font-size: 46px;
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+	text-align: center;
+	color:lightgreen;
+}
+p{
+	font-size: 20px;
+	color: yellow;
+}
+li{
+	font-size: 20px;
+	color: cyan;
+}
+
+
+/* Content */
+.content{
+	padding: 0 5%;
+}
+.attractions_table{
+	width:100%;
+}
+
+.attractions_table td{
+	width: 25%; 
+	text-align: center;
+}
+.attractions_table p{
+	padding: 0 10px;
+}
+
