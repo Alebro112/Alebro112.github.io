@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlebTour</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+html, body{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+}
+.wrapper{
+    background-color: #fff;
+    width: 75%;
+    margin: 0 auto;
+}
+
+header{
+    min-height: 100vh;
+    background-image: url('./img/bg/headerBG.png');
+    background-color: #cccccc;
+    background-size: cover;
+}
+
+.ystar{
+    width: 16px;
+    height: auto;
+    background-image: url('./img/icon/001-star\ 1.png');
+    background-color: transparent;
+    background-size: cover;
+}
+
+.tstar{
+    width: 16px;
+    height: auto;
+    background-image: url('./img/icon/002-star-1\ 1.png');
+    background-color: transparent;
+    background-size: cover;
+}
+
+.white{
+    color: white
+}
+
+.yellow{
+    color: #F8E116;
+}
+
+.logo-title{
+    padding-left: 4.5%; /* 64px */
+    padding-top: 64px;
+}
+
+.logo-title h3{
+    margin-top: -25px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 140px;
+
+    color: white;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 0.9;
+
+    color: black;
+}
+
+h3{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 0.9;
+}
+
+.btn-to-booking{
+    margin-top: 35px;
+
+    width: 416px;
+    height: 72px;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 0px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background-color: transparent;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.p64{
+    padding: 64px 4.5% 0 4.5%;
+}
+
+.vl{
+    width: 0.1%;
+    height: auto;
+
+    background-color: #BFBFBF;
+    border: 1px solid #BFBFBF;
+    box-shadow: 0px 0px 4px rgba(190, 191, 191, 0.25);
+}
+
+.christmaspromo{
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.christmaspromo .left, .christmaspromo .right{
+    width: 49%;
+}
+
+.christmaspromo h2{
+    margin-top: 0px;
+}
+
+
+.christmas-desc{
+    padding-top: 37px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.christmas-desc .title{
+    width: 100%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.005em;
+
+    margin-bottom: 9px;
+
+    color: #878787;
+}
+
+.christmas-desc .text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: justify;
+    letter-spacing: -0.005em;
+
+    padding-right: 16px;
+
+    color: #BDBDBE;
+}
+
+.allign-center{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.see-promo{
+    background-color: transparent;
+    color: black;
+    
+    width: 416px;
+    height: 72px;
+    margin: 72px 0;
+
+    border: 5px solid #000000;
+    box-sizing: border-box;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.clock{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 640px;
+    height: 204px;
+}
+
+.clock-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 32%; /* 192px */
+    height: 204px;
+}
+
+.clock .numbers{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.clock .num{
+    width: 45.833333333333333333333333333333%; /* 88px */
+    max-width: 88px;
+    height: 152px;
+    background-image: url('./img/bg/clockBG.png');
+    background-color: #cccccc;
+    background-size: cover;
+    border-radius: 13px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+
+    color: white;
+}
+
+.clock .name{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+
+    color: #737373;
+}
+
+
+/* 2 */
+
+.consultation{
+    padding-bottom: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #F5F5F5;
+}
+
+.consultation .title{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+
+    color: #000000;
+
+}
+
+.consultation .subtitle{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    
+    color: #A2A2A2;
+}
+
+.btn-send-consultation{
+    width: 232px;
+    height: 50.32px;
+
+    background-color: transparent;
+    border: 1.5px solid #7C7C7C;
+    box-sizing: border-box;
+    border-radius: 77px;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.advantages{
+    padding: 88px 7.77777% 119px 7.77777%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages-block .item{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-block img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 83px;
+    height: 83px;
+}
+
+.advantages-block .name{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1;
+
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: 8px;
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+.advantages-block .desc{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1;
+
+    color: #1C1C1C;
+
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.populartour{
+    background-color: #F5F5F5;
+
+    padding-bottom: 64px;
+}
+
+.populartour .item img{
+    width: 100%;
+    height: auto;
+}
+
+.populartour .items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.populartour .item{
+    width: 304px;
+    min-height: 280px;
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+}
+
+.populartour .textarea{
+    padding-left: 2.6315%;
+    padding-right: 2.6315%;
+    padding-top: 16px;
+}
+
+
+.populartour .country{
+    margin-bottom: 8px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+
+    color: #040020;
+}
+
+.populartour .spot{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.populartour .spot .name, .populartour .spot .price{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+
+    color: #9D9D9D;
+}
+
+.respons{
+    width: 384px;
+    min-height: 272px;  
+
+    background: #FFFFFF;
+    box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    padding: 16px;
+}
+
+.response-block{
+    padding-bottom: 64px;
+}
+
+.responses {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 52px;
+}
+
+@media(max-width: 1830px){
+    .responses{
+        justify-content: space-evenly;
+    }
+    .respons{
+        margin-bottom: 32px;
+    }
+}
+
+.respons img{
+    width: 64px;
+    height: 64px;
+}
+
+.respons .user{
+    display: flex;
+}
+
+.respons .textinfo{
+    margin-left: 7px;
+}
+
+.respons .name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+
+
+    color: #2B2B2B;
+}
+
+.respons .rating{
+    width: 91px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.respons .text{
+    margin-top: 16px;
+
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+
+    letter-spacing: -0.04em;
+
+    color: #767676;
+
+}
+
+footer{
+    height: auto;
+
+    background-color: transparent;
+    background-image: url('./img/bg/bookingBG.png');
+    background-position: bottom right;
+    background-size: cover;
+}
+
+.booking{
+    min-height: 376px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-anket{
+    padding: 40px 32px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.booking input[type="text"]{
+    width: 352px;
+    height: 56px;
+
+    background-color: transparent;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.booking input[type="text"]::placeholder{
+    color: #8A8A8A;
+}
+
+.btn-send-booking{
+    width: 352px;
+    height: 56px;
+
+    border: 3px solid #000000;
+    box-sizing: border-box;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+
+    text-align: center;
+
+    background-color: transparent;
+    color: #000000;
+}
+
+.footer{
+    width: 100%;
+    height: 56px;
+
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url('./img/bg/footerBG.png');
+    background-size: 100% 56px;
+}
+
+.footer .cont{
+    width: 100%;
+    padding: 0 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.vl2wrap{
+    padding: 0 16px;
+}
+.vl2{
+    width: 1px;
+    height: 16px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #000000;
+}
+
+.footer nav{
+    display: flex;
+    align-items: center;
+}
+
+.footer nav .link{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    letter-spacing: -0.04em;
+
+    color: #000000;
+}
+
+.social{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social img{
+    width: 24px;
+    height: 24px;
+}
+
+.social span{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+
+    color: #F7DF30;
+}
+
+@media(max-width: 1535px){
+
+    .vl2wra{
+        padding: 0 8px;
+    }
+
+}
+
+@media(max-width: 1440px){
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1160px){
+
+    .christmaspromo{
+        flex-direction: column;
+    }
+    .vl{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .christmaspromo .left, .christmaspromo .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .see-promo{
+        margin-bottom: 0;
+    }
+
+    .advantages{
+        justify-content: space-evenly;
+        padding-bottom: calc(119px - 60px);
+    }
+
+    .advantages .item{
+        margin-bottom: 60px;
+    }
+    .populartour .items{
+        justify-content: space-evenly;
+    }
+
+    .booking{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .booking-anket{
+        align-self: center;
+        margin-top: 64px;
+        width: 352px;
+        height: 296px;
+    }
+
+    .footer{
+        height: 112px;
+        background-image: url('./img/bg/footerBGSmal.png');
+        background-size: 100% 112px;
+    }
+
+    .footer .cont{
+        flex-direction: column;
+    }
+    .footer .cont nav, .social{
+        width: 100%;
+        height: 56px;
+    }
+    
+}
+
+@media(max-width: 760px){
+    .wrapper{
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: space-evenly;
+        background-image: url('./img/bg/headerBGSmal.png');
+    }
+
+    .logo-title{
+        padding-left: 0;
+    }
+
+    .populartour .item{
+        width: 70%;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-title">
+                <h1><span class="yellow">A</span>lebTour</h1>
+                <h3><span class="yellow">Л</span>учшие путешествия <br> начинаются у нас</h3>
+                <button class="btn-to-booking">Забронировать путшествие</button>
+            </div>
+            
+        </header>
+        <main>
+            <div class="christmaspromo p64">
+                <div class="left">
+                    <h2><span class="yellow">Р</span>ождественская <br>акция</h2>
+
+                    <div class="clock">
+                        <div class="clock-section">
+                            <div class="numbers">
+                                <span class="num">0</span>
+                                <span class="num">6</span>
+                            </div>
+                            <div class="name">Дней</div>
+                        </div>
+                        <div class="clock-section">
+                            <div class="numbers">
+                                <span class="num">1</span>
+                                <span class="num">7</span>
+                            </div>
+                            <div class="name">Часов</div>
+                        </div>
+                        <div class="clock-section">
+                            <div class="numbers">
+                                <span class="num">5</span>
+                                <span class="num">4</span>
+                            </div>
+                            <div class="name">Минут</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vl"></div>
+                <div class="right">
+                    <div class="christmas-desc">
+                        <span class="title">Здесь в скором будщем будет описание</span>
+                        <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis augue, efficitur a malesuada nec, ornare quis ligula. Etiam lacinia sagittis magna, vitae pretium quam finibus at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis augue, efficitur a malesuada nec, ornare quis ligula. Etiam lacinia sagittis magna, vitae pretium quam finibus at.</span>
+                    </div>
+
+                    <div class="allign-center">
+                        <button class="see-promo">Посмотреть предложения</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="consultation p64">
+                <span class="title">Консультация от работника</span>
+                <span class="subtitle">Остались вопросы? Свяжитесь с нашим консультаном, и мы ответим на ваши вопрсы.</span>
+                <button class="btn-send-consultation">Отослать запрос</button>
+            </div>
+
+            <div class="advantages-block p64">
+                <h2><span class="yellow">В</span>се что вам нужно</h2>
+                <div class="advantages">
+                    <div class="item">
+                        <img src="https://imgur.com/19m1hiI" alt="">
+                        <span class="name">Большой выбор</span>
+                        <span class="desc">Огромный выбор курортов от Запада до Востока</span>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://imgur.com/vGYe5og" alt="">
+                        <span class="name">Низкие цены</span>
+                        <span class="desc">Самые выгодные цены на хорошее качество</span>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://imgur.com/6XmIShv" alt="">
+                        <span class="name">Высокое качество</span>
+                        <span class="desc">Качество главный пункт нашей тур-фирмы</span>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://imgur.com/6XmIShv" alt="">
+                        <span class="name">Безопасность</span>
+                        <span class="desc">Ваша жизнь будет в безопасноти даже в самых горячих точках планеты</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="populartour p64">
+                <h2><span class="yellow">П</span>опулярные путешествия</h2>
+                <div class="items">
+                    <div class="item">
+                        <img src="./img/foto.png" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://imgur.com/K2pvlST" alt="">
+                        <div class="textarea">
+                            <span class="country">Литва</span>
+                            <div class="spot">
+                                <div class="name">
+                                    Вильнюс
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Второй кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                            <div class="spot">
+                                <div class="name">
+                                    Третий кто-то
+                                </div>
+                                <div class="price">
+                                    19€/н
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="response-block p64">
+                <h2><span class="yellow">О</span>тзывы</h2>
+                <div class="responses">
+                    <div class="respons">
+                        <div class="user">
+                            <img src="https://imgur.com/yGixEgR" alt="">
+                            <div class="textinfo">
+                                <div class="name">Estelle</div>
+                                <div class="rating">
+                                    <div class="ystar"></div>
+                                    <div class="ystar"></div>
+                                    <div class="ystar"></div>
+                                    <div class="ystar"></div>
+                                    <div class="ystar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            В мае прошлого года я купила через "AlebTour" поездку в Грецию. Тут всё было отлично!
+Отель 5* на острове Родос, питание "всё включено", 7 ночей на двоих с перелётом, трансфером и страховкой обошлись всего в 75 000 руб.
+Как всегда, забронировала и оплатила он-лайн, ТА прекрасно выполнило свои обязанности, документы пришли на почту и в личный кабинет, пакет для самостоятельного получения Шенгенских виз предоставили заранее. И отдых прошёл замечательно!
+Конечно, я довольна работой AlebTour!
+                        </div>
+                    </div>
+                    <div class="respons">
+                        <div class="user">
+                            <img src="./img/Ellipse 1.png" alt="">
+                            <div class="textinfo">
+                                <div class="name">Estelle</div>
+                                <div class="rating">
+                                    <div class="ystar"></div>
+                                    <div class="ystar"></div>
+                                    <div class="ystar"></div>
+                                    <div class="tstar"></div>
+                                    <div class="tstar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            В мае прошлого года я купила через "AlebTour" поездку в Грецию. Тут всё было отлично!
+Отель 5* на острове Родос, питание "всё включено", 7 ночей на двоих с перелётом, трансфером и страховкой обошлись всего в 75 000 руб.
+Как всегда, забронировала и оплатила он-лайн, ТА прекрасно выполнило свои обязанности, документы пришли на почту и в личный кабинет, пакет для самостоятельного получения Шенгенских виз предоставили заранее. И отдых прошёл замечательно!
+Конечно, я довольна работой AlebTour!
+                        </div>
+                    </div>
+                    <div class="respons">
+                        <div class="user">
+                            <img src="./img/Ellipse 1.png" alt="">
+                            <div class="textinfo">
+                                <div class="name">Estelle</div>
+                                <div class="rating">
+                                    <div class="tstar"></div>
+                                    <div class="tstar"></div>
+                                    <div class="tstar"></div>
+                                    <div class="tstar"></div>
+                                    <div class="tstar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            В мае прошлого года я купила через "AlebTour" поездку в Грецию. Тут всё было отлично!
+Отель 5* на острове Родос, питание "всё включено", 7 ночей на двоих с перелётом, трансфером и страховкой обошлись всего в 75 000 руб.
+Как всегда, забронировала и оплатила он-лайн, ТА прекрасно выполнило свои обязанности, документы пришли на почту и в личный кабинет, пакет для самостоятельного получения Шенгенских виз предоставили заранее. И отдых прошёл замечательно!
+Конечно, я довольна работой AlebTour!
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <div class="p64 booking">
+                <h2 class="white"><span class="yellow">Б</span>ронирования тура</h2>
+                <div class="booking-anket">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Электроная почта">
+                    <input type="text" placeholder="Номер телфона">
+                    <button class="btn-send-booking">Отправить заявку</button>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="cont">
+                    <nav>
+                        <span class="link">О AlebTour</span>
+                        <div class="vl2wrap"><div class="vl2"></div></div>
+                        <span class="link">Контакты</span>
+                        <div class="vl2wrap"><div class="vl2"></div></div>
+                        <span class="link">Для Агенств</span>
+                        <div class="vl2wrap"><div class="vl2"></div></div>
+                        <span class="link">Инвесторам</span>
+                    </nav>
+                    <div class="social">
+                        <span>Мы в соц. сетях</span>
+                        <img src="https://imgur.com/UcdBzsX" alt="">
+                        <img src="https://imgur.com/cJTfFRN" alt="">
+                        <img src="https://imgur.com/srBqTSO" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
